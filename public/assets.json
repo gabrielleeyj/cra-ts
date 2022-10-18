@@ -1,0 +1,15 @@
+{
+  "manifest": {
+    "js": "/manifest.js"
+  },
+  "app": {
+    "js": "/app.js"
+  },
+  "vendors": {
+    "js": "/vendors.js"
+  },
+  "": {
+    "png": "/assets/images/528c918bc8050e2bed3830b7e7e018c8-defaultArtistCover.png",
+    "html": "/index.html"
+  }
+}
