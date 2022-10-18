@@ -13,13 +13,10 @@ const Header: React.FunctionComponent<HeaderProps> = ({
   <Wrapper>
     <HeaderInner>
       <HeaderCenter>
-        <Title>{title}</Title>
-      </HeaderCenter>
-      <HeaderNav>
         <HeaderNavLink to="/" className="is-active">
-          Home
+        <Title>{title}</Title>
         </HeaderNavLink>
-      </HeaderNav>
+      </HeaderCenter>
     </HeaderInner>
     <ToolsContainer>
       <SearchBar />
@@ -32,7 +29,6 @@ export default Header;
 // Styled components
 
 const Wrapper = styled('header')`
-  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==');
   color: white;
   display: flex;
   height: 60px;
@@ -56,11 +52,6 @@ const HeaderCenter = styled('div')`
   padding-right: 40px;
 `;
 
-const HeaderNav = styled('nav')`
-  @media (min-width: 992px) {
-    margin: 0;
-  }
-`;
 
 const HeaderNavLink = styled(NavLink)`
   align-items: center;
